@@ -26,21 +26,21 @@
             background-color: rgb(4, 1, 12);
             height: 8vh;
         }
-        .logo{
+        #logo{
             font-size: 24px;
             text-transform: uppercase;
             height: 4vh;
         }
-        .hero{
+        #hero{
             background: url(img/backgroundHero.jpg) no-repeat center center;
             background-size: cover;
             height: 92vh;
         }
-        .menu {
+        #menu {
             list-style: none;
             display: flex;
         }
-        .menu li{
+        #menu li{
             letter-spacing: 3px;
             margin-left: 35px;
         }
@@ -52,9 +52,19 @@
             border-collapse: collapse;
             width: 80vw;
         }
-        .tabela{
+        #tabela{
             width: 90vw;
             margin: auto;
+        }
+        label{
+            cursor: pointer;
+            display: block;
+        }
+        .inline{
+            display: inline;
+        }
+        form{
+            margin: 20px;
         }
     </style>
 </head>
@@ -63,7 +73,7 @@
     <main>
         <header>
             <nav>
-                <a href="#"><img class="logo" src="img/logo.svg" alt="logo"></a>
+                <a href="#"><img id="logo" src="img/logo.svg" alt="logo"></a>
                 <ul class="menu">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Mecanismos de busca</a></li>
@@ -71,14 +81,14 @@
                 </ul>         
             </nav>
         </header>
-        <section class="hero">
+        <section id="hero">
             <a href="#">
                 <h1>Meu site top</h1>
             </a>
             <p>o melhor site</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis, illum?</p>
         </section>
-        <section>
+        <section id="google">
             <header>
                 <h2 class="bg-red">Mecanismos de busca: Google</h2>
             </header>
@@ -91,7 +101,7 @@
                 </p>
             </article>
         </section>
-        <section>
+        <section id="bing">
             <header>
                 <h2 class="bg-red" id="bg-blue">Mecanismos de busca: Bing</h2>
             </header>
@@ -126,7 +136,7 @@
         <p>consectetur adipisicing elit. A reiciendis alias vitae ipsa dolorem quo! Quo adipisci nesciunt asperiores enim?
         </p>
 
-        <section class="tabela">
+        <section id="tabela">
             <h2>Se liga na tabela</h2>
             <table>
                 <caption>Uma tabela legal</caption>
@@ -144,7 +154,6 @@
                     </tr>
                     <tr>
                         <td colspan="2" rowspan="2">dado 1</td>
-                        
                         <td>dado 3</td>
                     </tr>
                     <tr>
@@ -161,6 +170,50 @@
                 </tfoot>
             </table>
         </section>
+            <form action="#" method="get" target="_blank" autocomplete="off">
+                <section>
+                    <h3>titulo do formulário</h3>
+                        <legend>Descrição</legend>
+                        <p>
+                            <label for="nome">Nome:</label>
+                            <input type="text" id="nome" name="nomes" placeholder="Seu nome" required>
+                        </p>
+                        <p>
+                            <label class="inline" for="dev1">Sou desenvolvedor front-end</label>
+                            <input type="checkbox" id="dev1" name="dev">
+                            <br>
+                            <label class="inline" for="dev2">Sou desenvolvedor back-end</label>
+                            <input type="checkbox" id="dev2" name="dev">
+                            <br> <br>
+                        </p>
+                        <p>
+                            Qual seu gênero?<br>
+                            <label class="inline" for="masculino">Masculino</label>
+                                <input type="radio" id="masculino" name="genero" value="masculino">
+                                <br>
+                            <label class="inline" for="feminino">Feminino</label>
+                                <input type="radio" id="feminino" name="genero">
+                                <br>
+                            
+                        </p>
+                        <p>
+                            Quando é seu aniversário?<br>
+                            <label class="inline" for="nascimento">dia:</label>
+                                <input type="date" id="nascimento" name="nascimento">
+                                <br>                           
+                        </p>
+                        <p>
+                            Foto
+                            <label for="file">envie sua foto de perfil</label>
+                            <input type="file" id="file" name="file" accept=".jpg, .png, image/*" multiple>
+                        </p>
+                        <p>
+                            <button type="reset">Reset</button>
+                            <button type="submit">Enviar</button>
+                            <br><br>
+                        </p>
+                </section>
+            </form>
     </main>
 
     <footer>
