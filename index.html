@@ -95,7 +95,7 @@
             <article>
                 <h3>Google</h3>
                 <p class="bg-yellow">Lorem <strong>ipsum</strong>
-                    <a href="https://www.google.com" target="_blank">Google</a>
+                    <a rel="noopener external" href="https://www.google.com" target="_blank">Google</a>
                     <em>sit amet</em> consectetur adipisicing elit. <del>Doloru</del> <ins>Quod</ins> <small>quaerat</small>
                     totam H<sub>2</sub>O nesciunt 5<sup>2</sup> similique? A quibusdam facere harum repudiandae modi?
                 </p>
@@ -109,7 +109,7 @@
                 <h3>Bing</h3>
                 <p class="bg-yellow">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nesciunt, quam.</p>
                 <q cite="https://www.bing.com">O <strong>
-                    <a href="https://www.bing.com" target="_blank">Bing</a></strong> é
+                    <a rel="noopener external" href="https://www.bing.com" target="_blank">Bing</a></strong> é
                     um motor de busca da Microsoft, criado em 2009 para substituir o Live Search.</q>
                 <blockquote cite="https://www.google.com">Este é um bloco de citação!</blockquote>
             </article>
@@ -206,6 +206,16 @@
                             Foto
                             <label for="file">envie sua foto de perfil</label>
                             <input type="file" id="file" name="file" accept=".jpg, .png, image/*" multiple>
+                        </p>
+                        <p>
+                            Senha
+                            <label for="senha">envie sua foto de perfil</label>
+                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                        </p>
+                        <p>
+                            Range
+                            <label for="range">range:</label>
+                            <input type="range" id="range" name="range" min="0" max="100" step="10" value="0">
                         </p>
                         <p>
                             <button type="reset">Reset</button>
