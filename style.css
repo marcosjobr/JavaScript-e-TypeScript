@@ -3,8 +3,18 @@
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+html{
+    scroll-behavior: smooth;
+}
+header{
+    position: fixed;
+    width: 100%;
+}
+section{
+    height: 80vh;
+}
 .gigante{
-    font-size: 15em;
+    font-size: 15rem;
 }
 .flex{
     display: flex;
@@ -17,7 +27,7 @@
 }
 a {
     text-decoration: none;
-    color: white;
+    color: rgb(184, 184, 184);
     transition: 0.3s;
 }
 a:hover {
@@ -59,7 +69,7 @@ table{
     margin: auto;
 }
 #tabela{
-    width: 90vw;
+    width: 90%;
 }
 label{
     cursor: pointer;
@@ -81,9 +91,10 @@ form p{
 .bg{
     background-color: rgb(235, 235, 255);
     width: 90vw;
+    max-width: 900px;
     margin: auto;
     margin-bottom: 40px;
-    padding: 20px;
+    padding: 30px;
     border-radius: 15px;
     box-shadow: rgba(23, 16, 65, 0.288) 10px 10px 30px 0px;
     transition: 0.5s;
@@ -102,4 +113,18 @@ form p{
 }
 .db{
     display: block;
+}
+#texto{
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-weight: bold;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    line-height: 20px;
+}
+#texto h2,h3,p{
+    margin-bottom: 25px;
+}
+#texto p{
+    text-indent: 40px;
 }

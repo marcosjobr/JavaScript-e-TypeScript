@@ -15,17 +15,19 @@
             <nav>
                 <img class="logo" src="img/logo.svg" alt="logo">
                 <ul id="menu">
-                    <li><a href="#">Home</a></li>
+                    <li><a href="#hero">Início</a></li>
                     <li><a href="#google">Mecanismos de busca</a></li>
+                    <li><a href="#texto">Texto</a></li>
                     <li><a href="#formulario">Formulário</a></li>
+                    <li><a rel="external" target="_blank" href="https://www.youtube.com/watch?v=QzcvRDWgRIE&t=37s">+</a></li>
                 </ul>         
             </nav>
         </header>
         <section id="hero" class="flex">
-            <a href="#">
+            <a rel="external" target="_blank" href="https://www.youtube.com/watch?v=_S7WEVLbQ-Y">
                 <p class="gigante">🍷</p>
             </a>
-            <a href="#">
+            <a rel="external" target="_blank" href="https://www.youtube.com/watch?v=sY-1-jJyp_U">
                 <p class="gigante">🗿</p>
             </a>
         </section>
@@ -41,8 +43,7 @@
                     totam H<sub>2</sub>O nesciunt 5<sup>2</sup> similique? A quibusdam facere harum repudiandae modi?
                 </p>
             </article>
-        </section>
-        <section id="bing" class="margin20 bg">
+            <br><br>
             <header>
                 <h2 class="bg-red" id="bg-blue">Mecanismos de busca: Bing</h2>
             </header>
@@ -74,9 +75,9 @@
             </code>
         </pre>
 
-        <section id="tabela" class="margin20 bg">
+        <section class="margin20 bg">
             <h2>Se liga na tabela</h2>
-            <table>
+            <table id="tabela">
                 <caption>Uma tabela legal</caption>
                 <thead>
                     <tr>
@@ -108,73 +109,82 @@
                 </tfoot>
             </table>
         </section>
-            <form id="formulario" class="bg" action="#" method="get" target="_blank" autocomplete="off">
-                <section>
-                    <h3>titulo do formulário</h3>
-                        <p>
-                            <label for="nome">Nome:</label>
-                            <input type="text" id="nome" name="nomes" placeholder="Seu nome" required>
-                        </p>
-                        <p>
-                            <label class="inline" for="dev1">Sou desenvolvedor front-end</label>
-                            <input type="checkbox" id="dev1" name="dev">
-                            <br>
-                            <label class="inline" for="dev2">Sou desenvolvedor back-end</label>
-                            <input type="checkbox" id="dev2" name="dev">
-                        </p>
-                        <p>
-                            Qual seu gênero?
-                            <label class="inline" for="masculino">Masculino</label>
-                                <input type="radio" id="masculino" name="genero" value="masculino">
-                                
-                            <label class="inline" for="feminino">Feminino</label>
-                                <input type="radio" id="feminino" name="genero">
-                                
+        <form id="formulario" class="bg" action="#" method="get" target="_blank" autocomplete="off">
+            <section>
+                <h3>titulo do formulário</h3>
+                    <p>
+                        <label for="nome">Nome:</label>
+                        <input type="text" id="nome" name="nomes" placeholder="Seu nome" required>
+                    </p>
+                    <p>
+                        <label class="inline" for="dev1">Sou desenvolvedor front-end</label>
+                        <input type="checkbox" id="dev1" name="dev">
+                        <br>
+                        <label class="inline" for="dev2">Sou desenvolvedor back-end</label>
+                        <input type="checkbox" id="dev2" name="dev">
+                    </p>
+                    <p>
+                        Qual seu gênero?
+                        <label class="inline" for="masculino">Masculino</label>
+                            <input type="radio" id="masculino" name="genero" value="masculino">
                             
-                        </p>
-                        <p>
-                            Quando é seu aniversário?
-                            <label class="inline" for="nascimento">dia:</label>
-                                <input type="date" id="nascimento" name="nascimento">
-                                                           
-                        </p>
-                        <p>
-                              
-                            <label for="file">envie sua foto de perfil</label>
-                            <input type="file" id="file" name="file" accept=".jpg, .png, image/*" multiple>
-                              
-                        </p>
-                        <p>
-                             
-                            <label for="senha">digite sua senha</label>
-                            <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
-                             
-                        </p>
-                        <p>
-                              
-                            <label for="range">range:</label>
-                            <input type="range" id="range" name="range" min="0" max="100" step="10" value="0">
-                              
-                        </p>
-                        <p>
-                            <label for="url">Digite seu URL:</label>
-                            <input type="url" id="url" name="url" placeholder="seu site">
-                        </p>
-                        <p>
-                              
-                            <label for="search">Digite seu URL:</label>
-                            <input type="search" id="search" name="search" placeholder="seu site">
-                              
-                        </p>
-                        <p>
-                            <button type="reset">Reset</button>
-                            <button type="submit">Enviar</button>
+                        <label class="inline" for="feminino">Feminino</label>
+                            <input type="radio" id="feminino" name="genero">
                             
-                        </p>
-                </section>
-            </form>
+                        
+                    </p>
+                    <p>
+                        Quando é seu aniversário?
+                        <label class="inline" for="nascimento">dia:</label>
+                            <input type="date" id="nascimento" name="nascimento">
+                                                        
+                    </p>
+                    <p>
+                            
+                        <label for="file">envie sua foto de perfil</label>
+                        <input type="file" id="file" name="file" accept=".jpg, .png, image/*" multiple>
+                            
+                    </p>
+                    <p>
+                            
+                        <label for="senha">digite sua senha</label>
+                        <input type="password" id="senha" name="senha" placeholder="Digite sua senha">
+                            
+                    </p>
+                    <p>
+                            
+                        <label for="range">range:</label>
+                        <input type="range" id="range" name="range" min="0" max="100" step="10" value="0">
+                            
+                    </p>
+                    <p>
+                        <label for="url">Digite seu URL:</label>
+                        <input type="url" id="url" name="url" placeholder="seu site">
+                    </p>
+                    <p>
+                            
+                        <label for="search">Digite seu URL:</label>
+                        <input type="search" id="search" name="search" placeholder="seu site">
+                            
+                    </p>
+                    <p>
+                        <button type="reset">Reset</button>
+                        <button type="submit">Enviar</button>
+                        
+                    </p>
+            </section>
+        </form>
+        <section id="texto" class="bg">
+            <h2>Texto</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates temporibus suscipit laboriosam id itaque earum officia dolorum delectus sint. Molestias quibusdam sit exercitationem eos voluptatum inventore consequuntur provident aliquid nostrum iusto quam ducimus laboriosam ad corrupti nam maxime incidunt soluta consectetur magni, veritatis, quis recusandae, fugit non. Eum, ex modi!</p>
+            <h3>lorem</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil atque veritatis aperiam similique, optio ex quos eaque, corporis cumque ipsam laboriosam iusto dignissimos repellat, sapiente voluptatem excepturi. Itaque in unde voluptate delectus, error odit tempora adipisci quaerat asperiores corporis nulla molestiae libero? Voluptatum reprehenderit ducimus consequuntur nulla aperiam. Corporis id fuga magni vel laborum necessitatibus ab, ut, facere porro nostrum quam. Accusamus impedit omnis deleniti quae incidunt nam. Doloremque, omnis modi. Facilis eaque, dolorum praesentium beatae culpa tempore molestias adipisci nihil eos ea nobis sunt a veritatis doloremque debitis incidunt accusantium! Alias itaque dolorum harum temporibus doloribus eum, blanditiis voluptate?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quibusdam soluta ut id sunt quidem perferendis voluptatibus laborum, nemo rerum.</p>
+            <p>
+                <a rel="external" target="_blank" href="https://www.youtube.com/watch?v=n_qbGJuxCYY">*</a>
+            </p>
+        </section>
     </main>
-
     <footer class="margin20 bgd">
         <a class="db" href="#hero">
             <img class="logo" src="img/logo.svg" alt="logo">
