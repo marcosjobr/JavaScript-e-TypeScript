@@ -41,7 +41,7 @@ a:hover {
 #hero{
     background: url(img/backgroundHero.jpg) no-repeat center center;
     background-size: cover;
-    height: 92vh;
+    height: 100vh;
     margin-bottom: 100px;
 }
 nav {
@@ -127,4 +127,10 @@ form p{
 }
 #texto p{
     text-indent: 40px;
+}
+
+@media (max-width: 922px) {
+    section{
+        height: 50%;
+    }
 }
