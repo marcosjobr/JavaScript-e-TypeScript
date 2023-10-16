@@ -12,6 +12,11 @@ header{
 }
 section{
     height: 80vh;
+    width: 100vw;
+    margin: auto;
+}
+#hero{
+    width: 100%;
 }
 .gigante{
     font-size: 15rem;
@@ -131,6 +136,10 @@ form p{
 
 @media (max-width: 922px) {
     section{
-        height: 50%;
+       
+    }
+    #tabela{
+        width: 90%;
+        overflow-x: auto;
     }
 }
