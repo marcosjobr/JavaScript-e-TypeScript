@@ -5,6 +5,7 @@
 }
 html{
     scroll-behavior: smooth;
+    max-width: 100%;
 }
 header{
     position: fixed;
@@ -12,7 +13,7 @@ header{
 }
 section{
     height: 80vh;
-    width: 100vw;
+    width: 100%;
     margin: auto;
 }
 #hero{
@@ -109,7 +110,7 @@ form p{
 }
 .bgd{
     background-color: rgb(0, 0, 0);
-    width: 100vw;
+    max-width: 100%;
     margin: auto;
     padding: 20px;
     color: white;
@@ -132,14 +133,4 @@ form p{
 }
 #texto p{
     text-indent: 40px;
-}
-
-@media (max-width: 922px) {
-    section{
-       
-    }
-    #tabela{
-        width: 90%;
-        overflow-x: auto;
-    }
 }
