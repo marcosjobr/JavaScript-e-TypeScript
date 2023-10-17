@@ -16,6 +16,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 
     /*paleta de cores*/
     --bg: rgb(73, 53, 255);
+    --bgEscuro: #0A1026;
     --corClaro: rgb(226, 226, 226);
     --corEscuro: rgb(26, 26, 26);
 }
@@ -24,6 +25,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 *{
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
 /*botão de menu só com CSS ×*/
@@ -34,13 +36,14 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 
 .fecharMenuLabel::after{
     content: "☰";
+    font-weight: bold;
     position: fixed;
     z-index: 2;
     top: 1rem;
     right: 1.5rem;
-    font-size: 1.7rem;
-    padding: 0 0.5rem;
-    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    padding: 0.2rem 0.6rem 0.4rem 0.6rem;
+    border-radius: 0.1rem;
     background-color: var(--bg);
     color: var(--corClaro);
 }
@@ -51,25 +54,32 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 
 .fecharMenu:checked~.fecharMenuLabel::after{
     content: "×";
+    font-family: var(--fontePixel);
+    font-size: 2rem;
+    background-color: var(--corClaro);
+    color: var(--bg);
+    padding: 0 0.6rem;
 }
 
 #navSup{
     height: 100vh;
+    width: 100%;
     background-color: var(--bg);
-    padding: 30px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
     text-align: center;
     display: none;
+    position: fixed;
+    
 }
 
 #fecharMenu{
     display: none;
 }
 
-
+/*configuração de aparencia do menu quando aberto*/
 #logoP{
     max-height: 50px;
     padding-bottom: 30px;
@@ -80,5 +90,42 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 }
     
 nav a{
-    color: white;
+    text-decoration: none;
+    color: var(--corClaro);
+    font-family: var(--fontePixel);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/*inicio*/
+#inicio{
+    height: 100vh;
+    background: var(--bgEscuro) url(../img/bgPixelArt.jpg) center center / cover scroll;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1{
+    font-size: 3rem;
+    color: var(--corClaro);
+    font-family: var(--fontePixel);
+    text-align: center;
+    max-width: 80%;
+    padding-bottom: 3rem;
+}
+#botaoInicio{
+    font-family: var(--fontePixel);
+    font-weight: normal;
+    font-size: 1.2rem;
+    background-color: var(--corClaro);
+    color: var(--corEscuro);
+    padding: 0.5rem 0.7rem;
+    text-decoration: none;
+}
+
+#historia{
+    display: block;
+    background: var(--bg) url(../img/bgHistoria.jpg) center top / cover scroll;
 }
