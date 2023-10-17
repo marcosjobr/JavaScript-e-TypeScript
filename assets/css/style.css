@@ -10,6 +10,7 @@ html{
 header{
     position: fixed;
     width: 100%;
+    padding: 0;
 }
 section{
     height: 80vh;
