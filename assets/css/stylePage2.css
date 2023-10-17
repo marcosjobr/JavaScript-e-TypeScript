@@ -15,7 +15,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
     --fonteFina: 'Gruppo';
 
     /*paleta de cores*/
-    --bg: rgb(73, 53, 255);
+    --bgMenu: rgb(73, 53, 255);
     --bgEscuro: #0A1026;
     --corClaro: rgb(226, 226, 226);
     --corEscuro: rgb(26, 26, 26);
@@ -44,7 +44,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
     font-size: 1.5rem;
     padding: 0.2rem 0.6rem 0.4rem 0.6rem;
     border-radius: 0.1rem;
-    background-color: var(--bg);
+    background-color: var(--bgMenu);
     color: var(--corClaro);
 }
 
@@ -57,14 +57,14 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
     font-family: var(--fontePixel);
     font-size: 2rem;
     background-color: var(--corClaro);
-    color: var(--bg);
+    color: var(--bgMenu);
     padding: 0 0.6rem;
 }
 
 #navSup{
     height: 100vh;
     width: 100%;
-    background-color: var(--bg);
+    background-color: var(--bgMenu);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -81,8 +81,8 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 
 /*configuração de aparencia do menu quando aberto*/
 #logoP{
-    max-height: 50px;
-    padding-bottom: 30px;
+    max-height: 5rem;
+    padding-bottom: 2.5rem;
 }
 
 #navSup li{
@@ -107,7 +107,7 @@ nav a{
     align-items: center;
 }
 
-h1{
+#txtInicio{
     font-size: 3rem;
     color: var(--corClaro);
     font-family: var(--fontePixel);
@@ -126,6 +126,27 @@ h1{
 }
 
 #historia{
-    display: block;
-    background: var(--bg) url(../img/bgHistoria.jpg) center top / cover scroll;
+    background-color: var(--bgEscuro);
+    padding: 2rem;
+}
+
+#historia h1{
+    color: var(--corClaro);
+    font-size: 2.5rem;
+    font-family: var(--fontePixel);
+    padding-bottom: 2rem;
+}
+
+#historia h2{
+    color: var(--corClaro);
+    font-size: 1.5rem;
+    font-family: var(--fontePixel);
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+}
+
+#historia p{
+    color: var(--corClaro);
+    font-family: var(--fontePadrão);
+    padding-bottom: 1rem;
 }
