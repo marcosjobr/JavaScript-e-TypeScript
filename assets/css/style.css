@@ -45,7 +45,7 @@ a:hover {
     height: 30px;
 }
 #hero{
-    background: url(img/backgroundHero.jpg) no-repeat center center;
+    background: url(../img/backgroundHero.jpg) no-repeat center center;
     background-size: cover;
     height: 100vh;
     margin-bottom: 100px;
