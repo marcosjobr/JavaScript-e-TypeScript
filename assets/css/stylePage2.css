@@ -1,0 +1,84 @@
+/*
+Bém vindo ao meu código CSS.
+Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
+*/
+
+/*Abaixo temos algumas configurações básicas*/
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Pixelify+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
+
+/*Abaixo temos algumas configurações padrão que vou usar pelo site*/
+:root{
+    /*fontes*/
+    --fontePixel: 'Pixelify Sans';
+    --fontePadrão: 'Space Mono';
+    --fonteFina: 'Gruppo';
+
+    /*paleta de cores*/
+    --bg: rgb(73, 53, 255);
+    --corClaro: rgb(226, 226, 226);
+    --corEscuro: rgb(26, 26, 26);
+}
+
+/*configurações gerais*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/*botão de menu só com CSS ×*/
+.fecharMenu{
+    position: fixed;
+    z-index: 2;
+}
+
+.fecharMenuLabel::after{
+    content: "☰";
+    position: fixed;
+    z-index: 2;
+    top: 1rem;
+    right: 1.5rem;
+    font-size: 1.7rem;
+    padding: 0 0.5rem;
+    border-radius: 0.5rem;
+    background-color: var(--bg);
+    color: var(--corClaro);
+}
+
+.fecharMenu:checked~#navSup{
+    display: flex;
+}
+
+.fecharMenu:checked~.fecharMenuLabel::after{
+    content: "×";
+}
+
+#navSup{
+    height: 100vh;
+    background-color: var(--bg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    display: none;
+}
+
+#fecharMenu{
+    display: none;
+}
+
+
+#logoP{
+    max-height: 50px;
+    padding-bottom: 30px;
+}
+
+#navSup li{
+    padding-bottom: 20px;
+}
+    
+nav a{
+    color: white;
+}

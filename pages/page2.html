@@ -4,9 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../assets/css/stylePage2.css">
-    <title>Minha degunda página</title>
+    <title>PicelArt</title>
 </head>
 <body>
     
+    <input id="fecharMenu" class="fecharMenu" type="checkbox" aria-label="fechar menu" role="button">
+    <label class="fecharMenuLabel" for="fecharMenu" title="fecharMenu"></label>
+
+    <nav id="navSup">
+        <img id="logoP" src="../assets/img/logo.svg" alt="">
+        <ul id="menu" onclick="getElementById('fecharMenu').checked=false;">
+            <li><a href="#">Início</a></li>
+            <li><a href="#">História</a></li>
+            <li><a href="#">Estilos</a></li>
+            <li><a href="#">Artes</a></li>
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+        </ul>
+    </nav>
 </body>
 </html>
