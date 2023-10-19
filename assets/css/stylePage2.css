@@ -151,3 +151,40 @@ nav a{
     font-family: var(--fontePadrão);
     padding-bottom: 1rem;
 }
+
+#artes{
+    /*height: 100vh;*/
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    padding: 2rem;
+    background-color: var(--corClaro);
+    color: var(--corEscuro);
+}
+
+.gridContent{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 2rem;
+}
+
+#artes h1{
+    font-size: 2.5rem;
+    font-family: var(--fontePixel);
+}
+
+#artes h2{
+    font-size: 1.5rem;
+}
+
+#artes p{
+    font-family: var(--fontePixel);
+    padding-bottom: 1rem;
+}
+
+#artes img{
+    max-width: 100%;
+    max-height: 100%;
+    border: solid var(--corEscuro) 0.3rem;
+    border-radius: 5%;
+}
