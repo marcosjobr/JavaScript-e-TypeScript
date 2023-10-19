@@ -147,10 +147,14 @@ nav a{
     font-family: var(--fontePadrão);
     padding-bottom: 1rem;
 }
-
-#transicaoEC{
+#transicao{
     height: 11rem;
-    background: url(../img/transicao.jpg) center top /  contain repeat-x;
+    background-color: white;
+}
+
+#transicaoEC{   
+    height: 10rem;
+    background: url(../img/transicao.svg) center -30px /  contain repeat-x;
 }
 
 #historia{
