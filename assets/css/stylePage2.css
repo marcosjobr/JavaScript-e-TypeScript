@@ -177,9 +177,7 @@ nav a{
 
 #historia p{
     color: var(--corEscuro);
-    font-family: var(--fontePadrão);
     font-weight: bold;
-    padding-bottom: 1rem;
 }
 
 #artes{
@@ -207,8 +205,7 @@ nav a{
 }
 
 #artes p{
-    font-family: var(--fontePixel);
-    padding-bottom: 1rem;
+color: var(--corEscuro);
 }
 
 #artes img{
