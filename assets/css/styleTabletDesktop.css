@@ -110,6 +110,10 @@
         width: 100%;
         flex: 1 1 100%;
     }
+
+    #contato{
+        padding: 5rem;
+    }
     
 }
 
@@ -126,5 +130,9 @@
 @media screen and (min-width: 1200px){
     .gridArtes{
         grid-template-columns: repeat(3, 1fr);
+    }
+
+    #oquee .gridOqeImg{
+        width: 60%; 
     }
 }

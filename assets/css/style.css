@@ -175,7 +175,7 @@ nav a{
 }
 
 #oquee .gridOqeImg{
-    width: 90%; 
+    width: 80%;
 }
 
 #transicao{
@@ -245,7 +245,6 @@ padding-bottom: 2rem;
     justify-content: center;
     color: var(--corClaro);
     padding: 2rem;
-    height:100vh;
     padding-top: 5rem;
 }
 
