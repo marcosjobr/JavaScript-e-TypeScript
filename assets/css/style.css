@@ -118,7 +118,7 @@ nav a{
 /*inicio*/
 #inicio{
     height: 100vh;
-    background: var(--bgEscuro) url(../img/bgPixelArt.jpg) center center / cover scroll;
+    background: var(--bgEscuro) url(../img/bgPixelArt.jpg) center bottom / cover scroll;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -150,6 +150,8 @@ nav a{
     padding: 2rem;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    align-items: center;
+    justify-items: center;
 }
 
 #oquee h1{
@@ -167,6 +169,15 @@ nav a{
     border-radius: 5%;
 }
 
+#oquee .gridOqe{
+    width: 90%;
+    text-align: center;
+}
+
+#oquee .gridOqeImg{
+    width: 90%; 
+}
+
 #transicao{
     height: 11rem;
     background-color: white;
@@ -178,6 +189,9 @@ nav a{
 }
 
 #historia{
+    display: flex;
+    height: 100vh;
+    align-items: center;
     background-color: var(--corClaro);
     padding: 2rem;
 }
@@ -196,6 +210,8 @@ nav a{
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
+    text-align: center;
+    align-items: center;
     padding: 2rem;
     background-color: var(--corClaro);
     color: var(--corEscuro);
@@ -205,18 +221,16 @@ nav a{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
+    width: 80%;
 }
 
 #artes h1{
     color: var(--corEscuro);
 }
 
-#artes h2{
-    font-size: 1.5rem;
-}
-
 #artes p{
 color: var(--corEscuro);
+padding-bottom: 2rem;
 }
 
 #artes img{
@@ -244,7 +258,7 @@ color: var(--corEscuro);
 }
 
 .itemFormulario{
-    flex: 1 1 335px;
+    flex: 3 1 335px;
 }
 .itemFormulario input:hover, .itemFormulario textarea:hover{
     border-radius: .8rem;
