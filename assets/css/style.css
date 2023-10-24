@@ -206,7 +206,6 @@ nav a{
 }
 
 #artes{
-    /*height: 100vh;*/
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -221,7 +220,7 @@ nav a{
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
-    width: 80%;
+    width: 100%;
 }
 
 #artes h1{
@@ -241,8 +240,13 @@ padding-bottom: 2rem;
 }
 
 #contato{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--corClaro);
     padding: 2rem;
+    height:100vh;
+    padding-top: 5rem;
 }
 
 #contato h1{

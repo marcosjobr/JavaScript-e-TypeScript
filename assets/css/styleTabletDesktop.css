@@ -41,11 +41,10 @@
         font-size: 1.5rem;
         padding: .5rem 1.0rem;
     }
-
+   
     #navSup ul li a:hover{
         background-color: var(--bgEscuro);
         border-radius: 1rem;
- 
     }
 
     #logoP{
@@ -121,5 +120,11 @@
         padding: 3rem;
         align-items: center;
         justify-items: center;
+    }
+}
+
+@media screen and (min-width: 1200px){
+    .gridArtes{
+        grid-template-columns: repeat(3, 1fr);
     }
 }
