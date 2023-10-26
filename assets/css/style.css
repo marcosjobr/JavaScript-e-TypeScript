@@ -8,7 +8,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 @import url("https://fonts.googleapis.com/css2?family=Gruppo&family=Pixelify+Sans:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
 
 /*Abaixo temos algumas configurações padrão que vou usar pelo site*/
-:root{
+:root {
     /*fontes*/
     --fontePixel: 'Pixelify Sans';
     --fontePadrão: 'Space Mono';
@@ -22,7 +22,7 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
 }
 
 /*configurações gerais*/
-*{
+* {
     margin: 0;
     padding: 0;
     scroll-behavior: smooth;
@@ -30,29 +30,29 @@ Aqui você vai ver mais um passo da minha evolção como desenvolvedor web.
     transition: .5s ease-in-out;
 }
 
-html{
+html {
     background-color: var(--bgEscuro);
 }
 
-h1{
+h1 {
     font-family: var(--fontePixel);
     font-size: 2.5rem;
     padding-bottom: 2rem;
     font-weight: normal;
 }
 
-p{
+p {
     font-family: var(--fontePadrão);
     padding-bottom: 1rem;
 }
 
 /*botão de menu só com CSS ×*/
-.fecharMenu{
+.fecharMenu {
     position: fixed;
     z-index: 2;
 }
 
-.fecharMenuLabel::after{
+.fecharMenuLabel::after {
     content: "☰";
     font-weight: bold;
     position: fixed;
@@ -66,11 +66,11 @@ p{
     color: var(--corClaro);
 }
 
-.fecharMenu:checked~#navSup{
+.fecharMenu:checked~#navSup {
     display: flex;
 }
 
-.fecharMenu:checked~.fecharMenuLabel::after{
+.fecharMenu:checked~.fecharMenuLabel::after {
     content: "×";
     font-family: var(--fontePixel);
     font-size: 2rem;
@@ -79,7 +79,7 @@ p{
     padding: 0 0.6rem;
 }
 
-#navSup{
+#navSup {
     height: 100vh;
     width: 100%;
     background-color: var(--bgMenu);
@@ -90,24 +90,24 @@ p{
     display: none;
     position: fixed;
     list-style: none;
-    
+
 }
 
-#fecharMenu{
+#fecharMenu {
     display: none;
 }
 
 /*configuração de aparencia do menu quando aberto*/
-#logoP{
+#logoP {
     max-height: 5rem;
     padding-bottom: 2.5rem;
 }
 
-#navSup li{
+#navSup li {
     padding-bottom: 20px;
 }
-    
-nav a{
+
+nav a {
     text-decoration: none;
     color: var(--corClaro);
     font-family: var(--fontePixel);
@@ -116,7 +116,7 @@ nav a{
 }
 
 /*inicio*/
-#inicio{
+#inicio {
     height: 100vh;
     background: var(--bgEscuro) url(../img/bgPixelArt.jpg) center bottom / cover scroll;
     display: flex;
@@ -125,7 +125,7 @@ nav a{
     align-items: center;
 }
 
-#txtInicio{
+#txtInicio {
     font-size: 3rem;
     color: var(--corClaro);
     font-family: var(--fontePixel);
@@ -133,7 +133,8 @@ nav a{
     max-width: 80%;
     padding-bottom: 3rem;
 }
-#botaoInicio{
+
+#botaoInicio {
     font-family: var(--fontePixel);
     font-weight: normal;
     font-size: 1.2rem;
@@ -143,7 +144,7 @@ nav a{
     text-decoration: none;
 }
 
-#oquee{
+#oquee {
     display: grid;
     height: 100vh;
     background-color: var(--bgEscuro);
@@ -154,41 +155,41 @@ nav a{
     justify-items: center;
 }
 
-#oquee h1{
+#oquee h1 {
     color: var(--corClaro);
 }
 
-#oquee p{
+#oquee p {
     color: var(--corClaro);
 }
 
-#oquee img{
+#oquee img {
     max-width: 100%;
     max-height: 100%;
     border: solid var(--corClaro) 0.3rem;
     border-radius: 5%;
 }
 
-#oquee .gridOqe{
+#oquee .gridOqe {
     width: 90%;
     text-align: center;
 }
 
-#oquee .gridOqeImg{
+#oquee .gridOqeImg {
     width: 80%;
 }
 
-#transicao{
+#transicao {
     height: 11rem;
     background-color: white;
 }
 
-#transicaoEC{   
+#transicaoEC {
     height: 10rem;
-    background: url(../img/transicao.svg) center -30px /  contain repeat-x;
+    background: url(../img/transicao.svg) center -30px / contain repeat-x;
 }
 
-#historia{
+#historia {
     display: flex;
     height: 100vh;
     align-items: center;
@@ -196,16 +197,16 @@ nav a{
     padding: 2rem;
 }
 
-#historia h1{
+#historia h1 {
     color: var(--corEscuro);
 }
 
-#historia p{
+#historia p {
     color: var(--corEscuro);
     font-weight: bold;
 }
 
-#artes{
+#artes {
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
@@ -216,30 +217,30 @@ nav a{
     color: var(--corEscuro);
 }
 
-.gridArtes{
+.gridArtes {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 2rem;
     width: 100%;
 }
 
-#artes h1{
+#artes h1 {
     color: var(--corEscuro);
 }
 
-#artes p{
-color: var(--corEscuro);
-padding-bottom: 2rem;
+#artes p {
+    color: var(--corEscuro);
+    padding-bottom: 2rem;
 }
 
-#artes img{
+#artes img {
     max-width: 100%;
     max-height: 100%;
     border: solid var(--corEscuro) 0.3rem;
     border-radius: 5%;
 }
 
-#contato{
+#contato {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -248,11 +249,11 @@ padding-bottom: 2rem;
     padding-top: 5rem;
 }
 
-#contato h1{
+#contato h1 {
     color: var(--corClaro);
 }
 
-#formulario{
+#formulario {
     border: none;
     display: flex;
     flex-direction: row;
@@ -260,19 +261,22 @@ padding-bottom: 2rem;
     gap: 2rem;
 }
 
-.itemFormulario{
+.itemFormulario {
     flex: 3 1 335px;
 }
-.itemFormulario input:hover, .itemFormulario textarea:hover{
+
+.itemFormulario input:hover,
+.itemFormulario textarea:hover {
     border-radius: .8rem;
     transition: .5s;
 }
 
-.itemFormulario label{
+.itemFormulario label {
     display: block;
 }
 
-.itemFormulario input, .itemFormulario textarea{
+.itemFormulario input,
+.itemFormulario textarea {
     border: none;
     background-color: var(--corClaro);
     padding: 1rem 2rem;
@@ -280,7 +284,7 @@ padding-bottom: 2rem;
     transition: .5s;
 }
 
-.enviar{
+.enviar {
     background-color: var(--corClaro);
     padding: .5rem 2rem;
     width: 100%;
